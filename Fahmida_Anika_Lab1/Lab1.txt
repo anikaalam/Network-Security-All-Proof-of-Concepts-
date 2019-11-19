@@ -1,0 +1,12 @@
+Fahmida Alam Anika 
+Csc - Net Security 
+
+Q1: In which of the two modes, are patterns of the original image still visible and why? 
+- ECB still visible because ECB is characterisitics that each possible block of plaintext has a defined corresponding ciphertext value and vice versa. The same plaintext value will result in the same ciphertext value
+in the event of a small block size, coz some parts maybe resused often enough so that the same
+repitive part-blocks of ciphertext/pic  can emerge and in case of an image which share big concentartion of certain colors or pattern the encrypted version shows a much more visible sequence of patterns even in the ecrpted version and hence ecb is easy to detect.
+
+Q2: In which of the two modes, the colors are still visible and why?
+Both modes of the encypted files have colors visible in them because the encrypted pic was formed from the blocks of the original file, the colors of the original file will be visible in both but one more scrambled than the other.
+
+

@@ -1,0 +1,647 @@
+Sniffing TCP on port 23
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 08:00:27:ad:9c:51
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x10
+     len       = 55
+     id        = 55506
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x99a8
+     src       = 10.22.90.6
+     dst       = 10.22.90.4
+     \options   \
+###[ TCP ]### 
+        sport     = 52608
+        dport     = telnet
+        seq       = 2692432478L
+        ack       = 310270431
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 237
+        chksum    = 0xb7b3
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1227917, 1687544))]
+###[ Raw ]### 
+           load      = '\x1b[A'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:ad:9c:51
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x10
+     len       = 60
+     id        = 58047
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x8fb6
+     src       = 10.22.90.4
+     dst       = 10.22.90.6
+     \options   \
+###[ TCP ]### 
+        sport     = telnet
+        dport     = 52608
+        seq       = 310270431
+        ack       = 2692432481L
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 227
+        chksum    = 0xc864
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1695196, 1227917))]
+###[ Raw ]### 
+           load      = 'ifconfig'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 08:00:27:ad:9c:51
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x10
+     len       = 52
+     id        = 55507
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x99aa
+     src       = 10.22.90.6
+     dst       = 10.22.90.4
+     \options   \
+###[ TCP ]### 
+        sport     = 52608
+        dport     = telnet
+        seq       = 2692432481L
+        ack       = 310270439
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 237
+        chksum    = 0xf629
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1227918, 1695196))]
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 08:00:27:ad:9c:51
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x10
+     len       = 55
+     id        = 55508
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x99a6
+     src       = 10.22.90.6
+     dst       = 10.22.90.4
+     \options   \
+###[ TCP ]### 
+        sport     = 52608
+        dport     = telnet
+        seq       = 2692432481L
+        ack       = 310270439
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 237
+        chksum    = 0x9914
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1228093, 1695196))]
+###[ Raw ]### 
+           load      = '\x1b[A'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:ad:9c:51
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x10
+     len       = 78
+     id        = 58048
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x8fa3
+     src       = 10.22.90.4
+     dst       = 10.22.90.6
+     \options   \
+###[ TCP ]### 
+        sport     = telnet
+        dport     = 52608
+        seq       = 310270439
+        ack       = 2692432484L
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 227
+        chksum    = 0xc876
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1695372, 1228093))]
+###[ Raw ]### 
+           load      = '\x08\x08\x08\x08\x08\x08\x08\x08vim snifferTCP.txt'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 08:00:27:ad:9c:51
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x10
+     len       = 52
+     id        = 55509
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x99a8
+     src       = 10.22.90.6
+     dst       = 10.22.90.4
+     \options   \
+###[ TCP ]### 
+        sport     = 52608
+        dport     = telnet
+        seq       = 2692432484L
+        ack       = 310270465
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 237
+        chksum    = 0xf4ac
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1228094, 1695372))]
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 08:00:27:ad:9c:51
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x10
+     len       = 55
+     id        = 55510
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x99a4
+     src       = 10.22.90.6
+     dst       = 10.22.90.4
+     \options   \
+###[ TCP ]### 
+        sport     = 52608
+        dport     = telnet
+        seq       = 2692432484L
+        ack       = 310270465
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 237
+        chksum    = 0x9750
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1228340, 1695372))]
+###[ Raw ]### 
+           load      = '\x1b[A'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:ad:9c:51
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x10
+     len       = 115
+     id        = 58049
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x8f7d
+     src       = 10.22.90.4
+     dst       = 10.22.90.6
+     \options   \
+###[ TCP ]### 
+        sport     = telnet
+        dport     = 52608
+        seq       = 310270465
+        ack       = 2692432487L
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 227
+        chksum    = 0xc89b
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1695618, 1228340))]
+###[ Raw ]### 
+           load      = '\x08\x08\x08\x08\x08\x08\x08\x08\x08\x08\x08\x08\x08\x08\x08\x08\x08\x08sudo python snifferTCP.py > sniffer\r\x00rTCP.txt'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 08:00:27:ad:9c:51
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x10
+     len       = 52
+     id        = 55511
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x99a6
+     src       = 10.22.90.6
+     dst       = 10.22.90.4
+     \options   \
+###[ TCP ]### 
+        sport     = 52608
+        dport     = telnet
+        seq       = 2692432487L
+        ack       = 310270528
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 237
+        chksum    = 0xf27e
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1228340, 1695618))]
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 08:00:27:ad:9c:51
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x10
+     len       = 55
+     id        = 55512
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x99a2
+     src       = 10.22.90.6
+     dst       = 10.22.90.4
+     \options   \
+###[ TCP ]### 
+        sport     = 52608
+        dport     = telnet
+        seq       = 2692432487L
+        ack       = 310270528
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 237
+        chksum    = 0x93c5
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1228679, 1695618))]
+###[ Raw ]### 
+           load      = '\x1b[B'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:ad:9c:51
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x10
+     len       = 244
+     id        = 58050
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x8efb
+     src       = 10.22.90.4
+     dst       = 10.22.90.6
+     \options   \
+###[ TCP ]### 
+        sport     = telnet
+        dport     = 52608
+        seq       = 310270528
+        ack       = 2692432490L
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 227
+        chksum    = 0xc91c
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1695958, 1228679))]
+###[ Raw ]### 
+           load      = '\x1b[A\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[16Pvim snifferTCP.txt\r\n\r\x00\x1b[K\x1b[A\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C\x1b[C'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 08:00:27:ad:9c:51
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x10
+     len       = 52
+     id        = 55513
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x99a4
+     src       = 10.22.90.6
+     dst       = 10.22.90.4
+     \options   \
+###[ TCP ]### 
+        sport     = 52608
+        dport     = telnet
+        seq       = 2692432490L
+        ack       = 310270720
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 245
+        chksum    = 0xef0c
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1228679, 1695958))]
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 08:00:27:ad:9c:51
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x10
+     len       = 55
+     id        = 55514
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x99a0
+     src       = 10.22.90.6
+     dst       = 10.22.90.4
+     \options   \
+###[ TCP ]### 
+        sport     = 52608
+        dport     = telnet
+        seq       = 2692432490L
+        ack       = 310270720
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 245
+        chksum    = 0x9145
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1228776, 1695958))]
+###[ Raw ]### 
+           load      = '\x1b[B'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:ad:9c:51
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x10
+     len       = 83
+     id        = 58051
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x8f9b
+     src       = 10.22.90.4
+     dst       = 10.22.90.6
+     \options   \
+###[ TCP ]### 
+        sport     = telnet
+        dport     = 52608
+        seq       = 310270720
+        ack       = 2692432493L
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 227
+        chksum    = 0xc87b
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1696055, 1228776))]
+###[ Raw ]### 
+           load      = '\x08\x08\x08\x08\x08\x08\x08\x08\x08\x08\x08\x08\x08\x08\x08\x08\x08\x08\x1b[10Pifconfig'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 08:00:27:ad:9c:51
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x10
+     len       = 52
+     id        = 55515
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x99a2
+     src       = 10.22.90.6
+     dst       = 10.22.90.4
+     \options   \
+###[ TCP ]### 
+        sport     = 52608
+        dport     = telnet
+        seq       = 2692432493L
+        ack       = 310270751
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 245
+        chksum    = 0xee28
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1228776, 1696055))]
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 08:00:27:ad:9c:51
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x10
+     len       = 55
+     id        = 55516
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x999e
+     src       = 10.22.90.6
+     dst       = 10.22.90.4
+     \options   \
+###[ TCP ]### 
+        sport     = 52608
+        dport     = telnet
+        seq       = 2692432493L
+        ack       = 310270751
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 245
+        chksum    = 0x9038
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1228914, 1696055))]
+###[ Raw ]### 
+           load      = '\x1b[B'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:ad:9c:51
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x10
+     len       = 63
+     id        = 58052
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x8fae
+     src       = 10.22.90.4
+     dst       = 10.22.90.6
+     \options   \
+###[ TCP ]### 
+        sport     = telnet
+        dport     = 52608
+        seq       = 310270751
+        ack       = 2692432496L
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 227
+        chksum    = 0xc867
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1696193, 1228914))]
+###[ Raw ]### 
+           load      = '\x08\x08\x08\x08\x08\x08\x08\x08\x1b[K'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 08:00:27:ad:9c:51
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x10
+     len       = 52
+     id        = 55517
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x99a0
+     src       = 10.22.90.6
+     dst       = 10.22.90.4
+     \options   \
+###[ TCP ]### 
+        sport     = 52608
+        dport     = telnet
+        seq       = 2692432496L
+        ack       = 310270762
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 245
+        chksum    = 0xed05
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1228915, 1696193))]
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 08:00:27:ad:9c:51
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x10
+     len       = 53
+     id        = 55518
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x999e
+     src       = 10.22.90.6
+     dst       = 10.22.90.4
+     \options   \
+###[ TCP ]### 
+        sport     = 52608
+        dport     = telnet
+        seq       = 2692432496L
+        ack       = 310270762
+        dataofs   = 8
+        reserved  = 0
+        flags     = PA
+        window    = 245
+        chksum    = 0xcd38
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1230135, 1696193))]
+###[ Raw ]### 
+           load      = '\x1b'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:ad:9c:51
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x10
+     len       = 52
+     id        = 58053
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x8fb8
+     src       = 10.22.90.4
+     dst       = 10.22.90.6
+     \options   \
+###[ TCP ]### 
+        sport     = telnet
+        dport     = 52608
+        seq       = 310270762
+        ack       = 2692432497L
+        dataofs   = 8
+        reserved  = 0
+        flags     = A
+        window    = 227
+        chksum    = 0xc85c
+        urgptr    = 0
+        options   = [('NOP', None), ('NOP', None), ('Timestamp', (1697425, 1230135))]
+

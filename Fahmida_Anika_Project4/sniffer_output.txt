@@ -1,0 +1,1925 @@
+Sniffing ICMP and subnet packets
+###[ Ethernet ]### 
+  dst       = 52:54:00:12:35:00
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 16764
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = icmp
+     chksum    = 0x4f6
+     src       = 10.22.90.4
+     dst       = 147.4.253.24
+     \options   \
+###[ ICMP ]### 
+        type      = echo-request
+        code      = 0
+        chksum    = 0x9bdd
+        id        = 0xc41
+        seq       = 0x760
+###[ Raw ]### 
+           load      = '\x973\xd2]\xef\xec\x04\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 52:54:00:12:35:00
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 8734
+     flags     = 
+     frag      = 0
+     ttl       = 59
+     proto     = icmp
+     chksum    = 0x6954
+     src       = 147.4.253.24
+     dst       = 10.22.90.4
+     \options   \
+###[ ICMP ]### 
+        type      = echo-reply
+        code      = 0
+        chksum    = 0xa3dd
+        id        = 0xc41
+        seq       = 0x760
+###[ Raw ]### 
+           load      = '\x973\xd2]\xef\xec\x04\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 52:54:00:12:35:00
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 16784
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = icmp
+     chksum    = 0x4e2
+     src       = 10.22.90.4
+     dst       = 147.4.253.24
+     \options   \
+###[ ICMP ]### 
+        type      = echo-request
+        code      = 0
+        chksum    = 0x13d3
+        id        = 0xc41
+        seq       = 0x761
+###[ Raw ]### 
+           load      = '\x983\xd2]v\xf6\x04\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 52:54:00:12:35:00
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 8735
+     flags     = 
+     frag      = 0
+     ttl       = 59
+     proto     = icmp
+     chksum    = 0x6953
+     src       = 147.4.253.24
+     dst       = 10.22.90.4
+     \options   \
+###[ ICMP ]### 
+        type      = echo-reply
+        code      = 0
+        chksum    = 0x1bd3
+        id        = 0xc41
+        seq       = 0x761
+###[ Raw ]### 
+           load      = '\x983\xd2]v\xf6\x04\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 00:00:00:00:00:00
+  src       = 00:00:00:00:00:00
+  type      = 0x86dd
+###[ IPv6 ]### 
+     version   = 6
+     tc        = 0
+     fl        = 736697
+     plen      = 8
+     nh        = UDP
+     hlim      = 64
+     src       = ::1
+     dst       = ::1
+###[ UDP ]### 
+        sport     = 52154
+        dport     = 34211
+        len       = 8
+        chksum    = 0x1b
+
+###[ Ethernet ]### 
+  dst       = 00:00:00:00:00:00
+  src       = 00:00:00:00:00:00
+  type      = 0x86dd
+###[ IPv6 ]### 
+     version   = 6
+     tc        = 0
+     fl        = 736697
+     plen      = 8
+     nh        = UDP
+     hlim      = 64
+     src       = ::1
+     dst       = ::1
+###[ UDP ]### 
+        sport     = 52154
+        dport     = 34211
+        len       = 8
+        chksum    = 0x1b
+
+###[ Ethernet ]### 
+  dst       = 52:54:00:12:35:00
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 16884
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = icmp
+     chksum    = 0x47e
+     src       = 10.22.90.4
+     dst       = 147.4.253.24
+     \options   \
+###[ ICMP ]### 
+        type      = echo-request
+        code      = 0
+        chksum    = 0xdfc9
+        id        = 0xc41
+        seq       = 0x762
+###[ Raw ]### 
+           load      = '\x993\xd2]\xa9\xfe\x04\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 52:54:00:12:35:00
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 8736
+     flags     = 
+     frag      = 0
+     ttl       = 59
+     proto     = icmp
+     chksum    = 0x6952
+     src       = 147.4.253.24
+     dst       = 10.22.90.4
+     \options   \
+###[ ICMP ]### 
+        type      = echo-reply
+        code      = 0
+        chksum    = 0xe7c9
+        id        = 0xc41
+        seq       = 0x762
+###[ Raw ]### 
+           load      = '\x993\xd2]\xa9\xfe\x04\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 52:54:00:12:35:00
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 17042
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = icmp
+     chksum    = 0x3e0
+     src       = 10.22.90.4
+     dst       = 147.4.253.24
+     \options   \
+###[ ICMP ]### 
+        type      = echo-request
+        code      = 0
+        chksum    = 0xc6b5
+        id        = 0xc41
+        seq       = 0x763
+###[ Raw ]### 
+           load      = '\x9a3\xd2]\xc1\x11\x05\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 52:54:00:12:35:00
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 8737
+     flags     = 
+     frag      = 0
+     ttl       = 59
+     proto     = icmp
+     chksum    = 0x6951
+     src       = 147.4.253.24
+     dst       = 10.22.90.4
+     \options   \
+###[ ICMP ]### 
+        type      = echo-reply
+        code      = 0
+        chksum    = 0xceb5
+        id        = 0xc41
+        seq       = 0x763
+###[ Raw ]### 
+           load      = '\x9a3\xd2]\xc1\x11\x05\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 52:54:00:12:35:00
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 17156
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = icmp
+     chksum    = 0x36e
+     src       = 10.22.90.4
+     dst       = 147.4.253.24
+     \options   \
+###[ ICMP ]### 
+        type      = echo-request
+        code      = 0
+        chksum    = 0x5aad
+        id        = 0xc41
+        seq       = 0x764
+###[ Raw ]### 
+           load      = '\x9b3\xd2],\x19\x05\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 52:54:00:12:35:00
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 8738
+     flags     = 
+     frag      = 0
+     ttl       = 59
+     proto     = icmp
+     chksum    = 0x6950
+     src       = 147.4.253.24
+     dst       = 10.22.90.4
+     \options   \
+###[ ICMP ]### 
+        type      = echo-reply
+        code      = 0
+        chksum    = 0x62ad
+        id        = 0xc41
+        seq       = 0x764
+###[ Raw ]### 
+           load      = '\x9b3\xd2],\x19\x05\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 52:54:00:12:35:00
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 17228
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = icmp
+     chksum    = 0x326
+     src       = 10.22.90.4
+     dst       = 147.4.253.24
+     \options   \
+###[ ICMP ]### 
+        type      = echo-request
+        code      = 0
+        chksum    = 0xda97
+        id        = 0xc41
+        seq       = 0x765
+###[ Raw ]### 
+           load      = '\x9c3\xd2]\xab-\x05\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 52:54:00:12:35:00
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 8739
+     flags     = 
+     frag      = 0
+     ttl       = 59
+     proto     = icmp
+     chksum    = 0x694f
+     src       = 147.4.253.24
+     dst       = 10.22.90.4
+     \options   \
+###[ ICMP ]### 
+        type      = echo-reply
+        code      = 0
+        chksum    = 0xe297
+        id        = 0xc41
+        seq       = 0x765
+###[ Raw ]### 
+           load      = '\x9c3\xd2]\xab-\x05\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 52:54:00:12:35:00
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 17374
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = icmp
+     chksum    = 0x294
+     src       = 10.22.90.4
+     dst       = 147.4.253.24
+     \options   \
+###[ ICMP ]### 
+        type      = echo-request
+        code      = 0
+        chksum    = 0x638a
+        id        = 0xc41
+        seq       = 0x766
+###[ Raw ]### 
+           load      = '\x9d3\xd2]!:\x05\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 52:54:00:12:35:00
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 8740
+     flags     = 
+     frag      = 0
+     ttl       = 59
+     proto     = icmp
+     chksum    = 0x694e
+     src       = 147.4.253.24
+     dst       = 10.22.90.4
+     \options   \
+###[ ICMP ]### 
+        type      = echo-reply
+        code      = 0
+        chksum    = 0x6b8a
+        id        = 0xc41
+        seq       = 0x766
+###[ Raw ]### 
+           load      = '\x9d3\xd2]!:\x05\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 52:54:00:12:35:00
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 17620
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = icmp
+     chksum    = 0x19e
+     src       = 10.22.90.4
+     dst       = 147.4.253.24
+     \options   \
+###[ ICMP ]### 
+        type      = echo-request
+        code      = 0
+        chksum    = 0x1b7f
+        id        = 0xc41
+        seq       = 0x767
+###[ Raw ]### 
+           load      = '\x9e3\xd2]hD\x05\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 52:54:00:12:35:00
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 8741
+     flags     = 
+     frag      = 0
+     ttl       = 59
+     proto     = icmp
+     chksum    = 0x694d
+     src       = 147.4.253.24
+     dst       = 10.22.90.4
+     \options   \
+###[ ICMP ]### 
+        type      = echo-reply
+        code      = 0
+        chksum    = 0x237f
+        id        = 0xc41
+        seq       = 0x767
+###[ Raw ]### 
+           load      = '\x9e3\xd2]hD\x05\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 52:54:00:12:35:00
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 40
+     id        = 3244
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0xdd37
+     src       = 10.22.90.4
+     dst       = 52.89.184.121
+     \options   \
+###[ TCP ]### 
+        sport     = 42716
+        dport     = https
+        seq       = 3979172429L
+        ack       = 17744
+        dataofs   = 5
+        reserved  = 0
+        flags     = A
+        window    = 64240
+        chksum    = 0x5107
+        urgptr    = 0
+        options   = []
+
+###[ Ethernet ]### 
+  dst       = 52:54:00:12:35:00
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 40
+     id        = 50312
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x255b
+     src       = 10.22.90.4
+     dst       = 52.89.184.121
+     \options   \
+###[ TCP ]### 
+        sport     = 42712
+        dport     = https
+        seq       = 173929262
+        ack       = 18244
+        dataofs   = 5
+        reserved  = 0
+        flags     = A
+        window    = 64240
+        chksum    = 0x5107
+        urgptr    = 0
+        options   = []
+
+###[ Ethernet ]### 
+  dst       = 52:54:00:12:35:00
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 40
+     id        = 54703
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x1434
+     src       = 10.22.90.4
+     dst       = 52.89.184.121
+     \options   \
+###[ TCP ]### 
+        sport     = 42710
+        dport     = https
+        seq       = 1707935162
+        ack       = 17948
+        dataofs   = 5
+        reserved  = 0
+        flags     = A
+        window    = 64240
+        chksum    = 0x5107
+        urgptr    = 0
+        options   = []
+
+###[ Ethernet ]### 
+  dst       = 52:54:00:12:35:00
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 40
+     id        = 33318
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x67bd
+     src       = 10.22.90.4
+     dst       = 52.89.184.121
+     \options   \
+###[ TCP ]### 
+        sport     = 42708
+        dport     = https
+        seq       = 2041142996
+        ack       = 17652
+        dataofs   = 5
+        reserved  = 0
+        flags     = A
+        window    = 64240
+        chksum    = 0x5107
+        urgptr    = 0
+        options   = []
+
+###[ Ethernet ]### 
+  dst       = 52:54:00:12:35:00
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 40
+     id        = 3525
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0xdc1e
+     src       = 10.22.90.4
+     dst       = 52.89.184.121
+     \options   \
+###[ TCP ]### 
+        sport     = 42706
+        dport     = https
+        seq       = 3182412861L
+        ack       = 17980
+        dataofs   = 5
+        reserved  = 0
+        flags     = A
+        window    = 64240
+        chksum    = 0x5107
+        urgptr    = 0
+        options   = []
+
+###[ Ethernet ]### 
+  dst       = 52:54:00:12:35:00
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 40
+     id        = 36450
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x5b81
+     src       = 10.22.90.4
+     dst       = 52.89.184.121
+     \options   \
+###[ TCP ]### 
+        sport     = 42714
+        dport     = https
+        seq       = 1040317375
+        ack       = 17916
+        dataofs   = 5
+        reserved  = 0
+        flags     = A
+        window    = 64240
+        chksum    = 0x5107
+        urgptr    = 0
+        options   = []
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 52:54:00:12:35:00
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 40
+     id        = 8742
+     flags     = 
+     frag      = 0
+     ttl       = 255
+     proto     = tcp
+     chksum    = 0x48bd
+     src       = 52.89.184.121
+     dst       = 10.22.90.4
+     \options   \
+###[ TCP ]### 
+        sport     = https
+        dport     = 42716
+        seq       = 17744
+        ack       = 3979172430L
+        dataofs   = 5
+        reserved  = 0
+        flags     = A
+        window    = 32768
+        chksum    = 0xa983
+        urgptr    = 0
+        options   = []
+###[ Padding ]### 
+           load      = '\x00\x00\x00\x00\x00\x00'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 52:54:00:12:35:00
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 40
+     id        = 8743
+     flags     = 
+     frag      = 0
+     ttl       = 255
+     proto     = tcp
+     chksum    = 0x48bc
+     src       = 52.89.184.121
+     dst       = 10.22.90.4
+     \options   \
+###[ TCP ]### 
+        sport     = https
+        dport     = 42712
+        seq       = 18244
+        ack       = 173929263
+        dataofs   = 5
+        reserved  = 0
+        flags     = A
+        window    = 31920
+        chksum    = 0xf4d2
+        urgptr    = 0
+        options   = []
+###[ Padding ]### 
+           load      = '\x00\x00\x00\x00\x00\x00'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 52:54:00:12:35:00
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 40
+     id        = 8744
+     flags     = 
+     frag      = 0
+     ttl       = 255
+     proto     = tcp
+     chksum    = 0x48bb
+     src       = 52.89.184.121
+     dst       = 10.22.90.4
+     \options   \
+###[ TCP ]### 
+        sport     = https
+        dport     = 42710
+        seq       = 17948
+        ack       = 1707935163
+        dataofs   = 5
+        reserved  = 0
+        flags     = A
+        window    = 32768
+        chksum    = 0x84b1
+        urgptr    = 0
+        options   = []
+###[ Padding ]### 
+           load      = '\x00\x00\x00\x00\x00\x00'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 52:54:00:12:35:00
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 40
+     id        = 8745
+     flags     = 
+     frag      = 0
+     ttl       = 255
+     proto     = tcp
+     chksum    = 0x48ba
+     src       = 52.89.184.121
+     dst       = 10.22.90.4
+     \options   \
+###[ TCP ]### 
+        sport     = https
+        dport     = 42708
+        seq       = 17652
+        ack       = 2041142997
+        dataofs   = 5
+        reserved  = 0
+        flags     = A
+        window    = 31921
+        chksum    = 0x1c34
+        urgptr    = 0
+        options   = []
+###[ Padding ]### 
+           load      = '\x00\x00\x00\x00\x00\x00'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 52:54:00:12:35:00
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 40
+     id        = 8746
+     flags     = 
+     frag      = 0
+     ttl       = 255
+     proto     = tcp
+     chksum    = 0x48b9
+     src       = 52.89.184.121
+     dst       = 10.22.90.4
+     \options   \
+###[ TCP ]### 
+        sport     = https
+        dport     = 42706
+        seq       = 17980
+        ack       = 3182412862L
+        dataofs   = 5
+        reserved  = 0
+        flags     = A
+        window    = 32768
+        chksum    = 0x6e2f
+        urgptr    = 0
+        options   = []
+###[ Padding ]### 
+           load      = '\x00\x00\x00\x00\x00\x00'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 52:54:00:12:35:00
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 40
+     id        = 8747
+     flags     = 
+     frag      = 0
+     ttl       = 255
+     proto     = tcp
+     chksum    = 0x48b8
+     src       = 52.89.184.121
+     dst       = 10.22.90.4
+     \options   \
+###[ TCP ]### 
+        sport     = https
+        dport     = 42714
+        seq       = 17916
+        ack       = 1040317376
+        dataofs   = 5
+        reserved  = 0
+        flags     = A
+        window    = 32768
+        chksum    = 0xb693
+        urgptr    = 0
+        options   = []
+###[ Padding ]### 
+           load      = '\x00\x00\x00\x00\x00\x00'
+
+###[ Ethernet ]### 
+  dst       = 52:54:00:12:35:00
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 17740
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = icmp
+     chksum    = 0x126
+     src       = 10.22.90.4
+     dst       = 147.4.253.24
+     \options   \
+###[ ICMP ]### 
+        type      = echo-request
+        code      = 0
+        chksum    = 0xec73
+        id        = 0xc41
+        seq       = 0x768
+###[ Raw ]### 
+           load      = '\x9f3\xd2]\x96N\x05\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 52:54:00:12:35:00
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 8748
+     flags     = 
+     frag      = 0
+     ttl       = 59
+     proto     = icmp
+     chksum    = 0x6946
+     src       = 147.4.253.24
+     dst       = 10.22.90.4
+     \options   \
+###[ ICMP ]### 
+        type      = echo-reply
+        code      = 0
+        chksum    = 0xf473
+        id        = 0xc41
+        seq       = 0x768
+###[ Raw ]### 
+           load      = '\x9f3\xd2]\x96N\x05\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 52:54:00:12:35:00
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 17813
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = icmp
+     chksum    = 0xdd
+     src       = 10.22.90.4
+     dst       = 147.4.253.24
+     \options   \
+###[ ICMP ]### 
+        type      = echo-request
+        code      = 0
+        chksum    = 0x8263
+        id        = 0xc41
+        seq       = 0x769
+###[ Raw ]### 
+           load      = '\xa03\xd2]\xff]\x05\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 52:54:00:12:35:00
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 8749
+     flags     = 
+     frag      = 0
+     ttl       = 59
+     proto     = icmp
+     chksum    = 0x6945
+     src       = 147.4.253.24
+     dst       = 10.22.90.4
+     \options   \
+###[ ICMP ]### 
+        type      = echo-reply
+        code      = 0
+        chksum    = 0x8a63
+        id        = 0xc41
+        seq       = 0x769
+###[ Raw ]### 
+           load      = '\xa03\xd2]\xff]\x05\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 52:54:00:12:35:00
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 18044
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = icmp
+     chksum    = 0xfff5
+     src       = 10.22.90.4
+     dst       = 147.4.253.24
+     \options   \
+###[ ICMP ]### 
+        type      = echo-request
+        code      = 0
+        chksum    = 0x2e5d
+        id        = 0xc41
+        seq       = 0x76a
+###[ Raw ]### 
+           load      = '\xa13\xd2]Rc\x05\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 52:54:00:12:35:00
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 8750
+     flags     = 
+     frag      = 0
+     ttl       = 59
+     proto     = icmp
+     chksum    = 0x6944
+     src       = 147.4.253.24
+     dst       = 10.22.90.4
+     \options   \
+###[ ICMP ]### 
+        type      = echo-reply
+        code      = 0
+        chksum    = 0x365d
+        id        = 0xc41
+        seq       = 0x76a
+###[ Raw ]### 
+           load      = '\xa13\xd2]Rc\x05\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 52:54:00:12:35:00
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 18081
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = icmp
+     chksum    = 0xffd0
+     src       = 10.22.90.4
+     dst       = 147.4.253.24
+     \options   \
+###[ ICMP ]### 
+        type      = echo-request
+        code      = 0
+        chksum    = 0xf833
+        id        = 0xc41
+        seq       = 0x76b
+###[ Raw ]### 
+           load      = '\xa23\xd2]\x87\x8b\x05\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 52:54:00:12:35:00
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 8751
+     flags     = 
+     frag      = 0
+     ttl       = 59
+     proto     = icmp
+     chksum    = 0x6943
+     src       = 147.4.253.24
+     dst       = 10.22.90.4
+     \options   \
+###[ ICMP ]### 
+        type      = echo-reply
+        code      = 0
+        chksum    = 0x34
+        id        = 0xc41
+        seq       = 0x76b
+###[ Raw ]### 
+           load      = '\xa23\xd2]\x87\x8b\x05\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 52:54:00:12:35:00
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 18111
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = icmp
+     chksum    = 0xffb2
+     src       = 10.22.90.4
+     dst       = 147.4.253.24
+     \options   \
+###[ ICMP ]### 
+        type      = echo-request
+        code      = 0
+        chksum    = 0xd428
+        id        = 0xc41
+        seq       = 0x76c
+###[ Raw ]### 
+           load      = '\xa33\xd2]\xaa\x95\x05\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 52:54:00:12:35:00
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 8752
+     flags     = 
+     frag      = 0
+     ttl       = 59
+     proto     = icmp
+     chksum    = 0x6942
+     src       = 147.4.253.24
+     dst       = 10.22.90.4
+     \options   \
+###[ ICMP ]### 
+        type      = echo-reply
+        code      = 0
+        chksum    = 0xdc28
+        id        = 0xc41
+        seq       = 0x76c
+###[ Raw ]### 
+           load      = '\xa33\xd2]\xaa\x95\x05\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 00:00:00:00:00:00
+  src       = 00:00:00:00:00:00
+  type      = 0x86dd
+###[ IPv6 ]### 
+     version   = 6
+     tc        = 0
+     fl        = 736697
+     plen      = 8
+     nh        = UDP
+     hlim      = 64
+     src       = ::1
+     dst       = ::1
+###[ UDP ]### 
+        sport     = 52154
+        dport     = 34211
+        len       = 8
+        chksum    = 0x1b
+
+###[ Ethernet ]### 
+  dst       = 00:00:00:00:00:00
+  src       = 00:00:00:00:00:00
+  type      = 0x86dd
+###[ IPv6 ]### 
+     version   = 6
+     tc        = 0
+     fl        = 736697
+     plen      = 8
+     nh        = UDP
+     hlim      = 64
+     src       = ::1
+     dst       = ::1
+###[ UDP ]### 
+        sport     = 52154
+        dport     = 34211
+        len       = 8
+        chksum    = 0x1b
+
+###[ Ethernet ]### 
+  dst       = 52:54:00:12:35:00
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 18131
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = icmp
+     chksum    = 0xff9e
+     src       = 10.22.90.4
+     dst       = 147.4.253.24
+     \options   \
+###[ ICMP ]### 
+        type      = echo-request
+        code      = 0
+        chksum    = 0xdb1a
+        id        = 0xc41
+        seq       = 0x76d
+###[ Raw ]### 
+           load      = '\xa43\xd2]\xa2\xa2\x05\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 52:54:00:12:35:00
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 8753
+     flags     = 
+     frag      = 0
+     ttl       = 59
+     proto     = icmp
+     chksum    = 0x6941
+     src       = 147.4.253.24
+     dst       = 10.22.90.4
+     \options   \
+###[ ICMP ]### 
+        type      = echo-reply
+        code      = 0
+        chksum    = 0xe31a
+        id        = 0xc41
+        seq       = 0x76d
+###[ Raw ]### 
+           load      = '\xa43\xd2]\xa2\xa2\x05\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 52:54:00:12:35:00
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 18345
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = icmp
+     chksum    = 0xfec8
+     src       = 10.22.90.4
+     dst       = 147.4.253.24
+     \options   \
+###[ ICMP ]### 
+        type      = echo-request
+        code      = 0
+        chksum    = 0xc711
+        id        = 0xc41
+        seq       = 0x76e
+###[ Raw ]### 
+           load      = '\xa53\xd2]\xb5\xaa\x05\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 52:54:00:12:35:00
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 8754
+     flags     = 
+     frag      = 0
+     ttl       = 59
+     proto     = icmp
+     chksum    = 0x6940
+     src       = 147.4.253.24
+     dst       = 10.22.90.4
+     \options   \
+###[ ICMP ]### 
+        type      = echo-reply
+        code      = 0
+        chksum    = 0xcf11
+        id        = 0xc41
+        seq       = 0x76e
+###[ Raw ]### 
+           load      = '\xa53\xd2]\xb5\xaa\x05\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 52:54:00:12:35:00
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 18479
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = icmp
+     chksum    = 0xfe42
+     src       = 10.22.90.4
+     dst       = 147.4.253.24
+     \options   \
+###[ ICMP ]### 
+        type      = echo-request
+        code      = 0
+        chksum    = 0xcdf9
+        id        = 0xc41
+        seq       = 0x76f
+###[ Raw ]### 
+           load      = '\xa63\xd2]\xad\xc1\x05\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 52:54:00:12:35:00
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 8755
+     flags     = 
+     frag      = 0
+     ttl       = 59
+     proto     = icmp
+     chksum    = 0x693f
+     src       = 147.4.253.24
+     dst       = 10.22.90.4
+     \options   \
+###[ ICMP ]### 
+        type      = echo-reply
+        code      = 0
+        chksum    = 0xd5f9
+        id        = 0xc41
+        seq       = 0x76f
+###[ Raw ]### 
+           load      = '\xa63\xd2]\xad\xc1\x05\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 52:54:00:12:35:00
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 18632
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = icmp
+     chksum    = 0xfda9
+     src       = 10.22.90.4
+     dst       = 147.4.253.24
+     \options   \
+###[ ICMP ]### 
+        type      = echo-request
+        code      = 0
+        chksum    = 0x42e3
+        id        = 0xc41
+        seq       = 0x770
+###[ Raw ]### 
+           load      = '\xa73\xd2]7\xd7\x05\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 52:54:00:12:35:00
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 8756
+     flags     = 
+     frag      = 0
+     ttl       = 59
+     proto     = icmp
+     chksum    = 0x693e
+     src       = 147.4.253.24
+     dst       = 10.22.90.4
+     \options   \
+###[ ICMP ]### 
+        type      = echo-reply
+        code      = 0
+        chksum    = 0x4ae3
+        id        = 0xc41
+        seq       = 0x770
+###[ Raw ]### 
+           load      = '\xa73\xd2]7\xd7\x05\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 52:54:00:12:35:00
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 18681
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = icmp
+     chksum    = 0xfd78
+     src       = 10.22.90.4
+     dst       = 147.4.253.24
+     \options   \
+###[ ICMP ]### 
+        type      = echo-request
+        code      = 0
+        chksum    = 0x4bca
+        id        = 0xc41
+        seq       = 0x771
+###[ Raw ]### 
+           load      = '\xa83\xd2]-\xef\x05\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 52:54:00:12:35:00
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 8757
+     flags     = 
+     frag      = 0
+     ttl       = 59
+     proto     = icmp
+     chksum    = 0x693d
+     src       = 147.4.253.24
+     dst       = 10.22.90.4
+     \options   \
+###[ ICMP ]### 
+        type      = echo-reply
+        code      = 0
+        chksum    = 0x53ca
+        id        = 0xc41
+        seq       = 0x771
+###[ Raw ]### 
+           load      = '\xa83\xd2]-\xef\x05\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 52:54:00:12:35:00
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 40
+     id        = 3245
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0xdd36
+     src       = 10.22.90.4
+     dst       = 52.89.184.121
+     \options   \
+###[ TCP ]### 
+        sport     = 42716
+        dport     = https
+        seq       = 3979172429L
+        ack       = 17744
+        dataofs   = 5
+        reserved  = 0
+        flags     = A
+        window    = 64240
+        chksum    = 0x5107
+        urgptr    = 0
+        options   = []
+
+###[ Ethernet ]### 
+  dst       = 52:54:00:12:35:00
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 40
+     id        = 50313
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x255a
+     src       = 10.22.90.4
+     dst       = 52.89.184.121
+     \options   \
+###[ TCP ]### 
+        sport     = 42712
+        dport     = https
+        seq       = 173929262
+        ack       = 18244
+        dataofs   = 5
+        reserved  = 0
+        flags     = A
+        window    = 64240
+        chksum    = 0x5107
+        urgptr    = 0
+        options   = []
+
+###[ Ethernet ]### 
+  dst       = 52:54:00:12:35:00
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 40
+     id        = 54704
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x1433
+     src       = 10.22.90.4
+     dst       = 52.89.184.121
+     \options   \
+###[ TCP ]### 
+        sport     = 42710
+        dport     = https
+        seq       = 1707935162
+        ack       = 17948
+        dataofs   = 5
+        reserved  = 0
+        flags     = A
+        window    = 64240
+        chksum    = 0x5107
+        urgptr    = 0
+        options   = []
+
+###[ Ethernet ]### 
+  dst       = 52:54:00:12:35:00
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 40
+     id        = 33319
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x67bc
+     src       = 10.22.90.4
+     dst       = 52.89.184.121
+     \options   \
+###[ TCP ]### 
+        sport     = 42708
+        dport     = https
+        seq       = 2041142996
+        ack       = 17652
+        dataofs   = 5
+        reserved  = 0
+        flags     = A
+        window    = 64240
+        chksum    = 0x5107
+        urgptr    = 0
+        options   = []
+
+###[ Ethernet ]### 
+  dst       = 52:54:00:12:35:00
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 40
+     id        = 3526
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0xdc1d
+     src       = 10.22.90.4
+     dst       = 52.89.184.121
+     \options   \
+###[ TCP ]### 
+        sport     = 42706
+        dport     = https
+        seq       = 3182412861L
+        ack       = 17980
+        dataofs   = 5
+        reserved  = 0
+        flags     = A
+        window    = 64240
+        chksum    = 0x5107
+        urgptr    = 0
+        options   = []
+
+###[ Ethernet ]### 
+  dst       = 52:54:00:12:35:00
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 40
+     id        = 36451
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0x5b80
+     src       = 10.22.90.4
+     dst       = 52.89.184.121
+     \options   \
+###[ TCP ]### 
+        sport     = 42714
+        dport     = https
+        seq       = 1040317375
+        ack       = 17916
+        dataofs   = 5
+        reserved  = 0
+        flags     = A
+        window    = 64240
+        chksum    = 0x5107
+        urgptr    = 0
+        options   = []
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 52:54:00:12:35:00
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 40
+     id        = 8758
+     flags     = 
+     frag      = 0
+     ttl       = 255
+     proto     = tcp
+     chksum    = 0x48ad
+     src       = 52.89.184.121
+     dst       = 10.22.90.4
+     \options   \
+###[ TCP ]### 
+        sport     = https
+        dport     = 42716
+        seq       = 17744
+        ack       = 3979172430L
+        dataofs   = 5
+        reserved  = 0
+        flags     = A
+        window    = 32768
+        chksum    = 0xa983
+        urgptr    = 0
+        options   = []
+###[ Padding ]### 
+           load      = '\x00\x00\x00\x00\x00\x00'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 52:54:00:12:35:00
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 40
+     id        = 8759
+     flags     = 
+     frag      = 0
+     ttl       = 255
+     proto     = tcp
+     chksum    = 0x48ac
+     src       = 52.89.184.121
+     dst       = 10.22.90.4
+     \options   \
+###[ TCP ]### 
+        sport     = https
+        dport     = 42712
+        seq       = 18244
+        ack       = 173929263
+        dataofs   = 5
+        reserved  = 0
+        flags     = A
+        window    = 31920
+        chksum    = 0xf4d2
+        urgptr    = 0
+        options   = []
+###[ Padding ]### 
+           load      = '\x00\x00\x00\x00\x00\x00'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 52:54:00:12:35:00
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 40
+     id        = 8760
+     flags     = 
+     frag      = 0
+     ttl       = 255
+     proto     = tcp
+     chksum    = 0x48ab
+     src       = 52.89.184.121
+     dst       = 10.22.90.4
+     \options   \
+###[ TCP ]### 
+        sport     = https
+        dport     = 42710
+        seq       = 17948
+        ack       = 1707935163
+        dataofs   = 5
+        reserved  = 0
+        flags     = A
+        window    = 32768
+        chksum    = 0x84b1
+        urgptr    = 0
+        options   = []
+###[ Padding ]### 
+           load      = '\x00\x00\x00\x00\x00\x00'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 52:54:00:12:35:00
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 40
+     id        = 8761
+     flags     = 
+     frag      = 0
+     ttl       = 255
+     proto     = tcp
+     chksum    = 0x48aa
+     src       = 52.89.184.121
+     dst       = 10.22.90.4
+     \options   \
+###[ TCP ]### 
+        sport     = https
+        dport     = 42708
+        seq       = 17652
+        ack       = 2041142997
+        dataofs   = 5
+        reserved  = 0
+        flags     = A
+        window    = 31921
+        chksum    = 0x1c34
+        urgptr    = 0
+        options   = []
+###[ Padding ]### 
+           load      = '\x00\x00\x00\x00\x00\x00'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 52:54:00:12:35:00
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 40
+     id        = 8762
+     flags     = 
+     frag      = 0
+     ttl       = 255
+     proto     = tcp
+     chksum    = 0x48a9
+     src       = 52.89.184.121
+     dst       = 10.22.90.4
+     \options   \
+###[ TCP ]### 
+        sport     = https
+        dport     = 42706
+        seq       = 17980
+        ack       = 3182412862L
+        dataofs   = 5
+        reserved  = 0
+        flags     = A
+        window    = 32768
+        chksum    = 0x6e2f
+        urgptr    = 0
+        options   = []
+###[ Padding ]### 
+           load      = '\x00\x00\x00\x00\x00\x00'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 52:54:00:12:35:00
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 40
+     id        = 8763
+     flags     = 
+     frag      = 0
+     ttl       = 255
+     proto     = tcp
+     chksum    = 0x48a8
+     src       = 52.89.184.121
+     dst       = 10.22.90.4
+     \options   \
+###[ TCP ]### 
+        sport     = https
+        dport     = 42714
+        seq       = 17916
+        ack       = 1040317376
+        dataofs   = 5
+        reserved  = 0
+        flags     = A
+        window    = 32768
+        chksum    = 0xb693
+        urgptr    = 0
+        options   = []
+###[ Padding ]### 
+           load      = '\x00\x00\x00\x00\x00\x00'
+
+###[ Ethernet ]### 
+  dst       = 52:54:00:12:35:00
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 18704
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = icmp
+     chksum    = 0xfd61
+     src       = 10.22.90.4
+     dst       = 147.4.253.24
+     \options   \
+###[ ICMP ]### 
+        type      = echo-request
+        code      = 0
+        chksum    = 0x5b74
+        id        = 0xc41
+        seq       = 0x772
+###[ Raw ]### 
+           load      = '\xa93\xd2]\x1cD\x06\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 52:54:00:12:35:00
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 8764
+     flags     = 
+     frag      = 0
+     ttl       = 59
+     proto     = icmp
+     chksum    = 0x6936
+     src       = 147.4.253.24
+     dst       = 10.22.90.4
+     \options   \
+###[ ICMP ]### 
+        type      = echo-reply
+        code      = 0
+        chksum    = 0x6374
+        id        = 0xc41
+        seq       = 0x772
+###[ Raw ]### 
+           load      = '\xa93\xd2]\x1cD\x06\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 52:54:00:12:35:00
+  src       = 08:00:27:14:6e:08
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 18825
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = icmp
+     chksum    = 0xfce8
+     src       = 10.22.90.4
+     dst       = 147.4.253.24
+     \options   \
+###[ ICMP ]### 
+        type      = echo-request
+        code      = 0
+        chksum    = 0x42f3
+        id        = 0xc41
+        seq       = 0x773
+###[ Raw ]### 
+           load      = '\xaa3\xd2]2\xc4\x07\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+###[ Ethernet ]### 
+  dst       = 08:00:27:14:6e:08
+  src       = 52:54:00:12:35:00
+  type      = 0x800
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 84
+     id        = 8765
+     flags     = 
+     frag      = 0
+     ttl       = 59
+     proto     = icmp
+     chksum    = 0x6935
+     src       = 147.4.253.24
+     dst       = 10.22.90.4
+     \options   \
+###[ ICMP ]### 
+        type      = echo-reply
+        code      = 0
+        chksum    = 0x4af3
+        id        = 0xc41
+        seq       = 0x773
+###[ Raw ]### 
+           load      = '\xaa3\xd2]2\xc4\x07\x00\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+

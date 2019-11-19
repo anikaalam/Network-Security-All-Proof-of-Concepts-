@@ -1,0 +1,217 @@
+CSC 288: Lab 2
+Anika, Fahmida 
+03/03/2019
+
+Public-Key encryption and Public-Key Infrastructure (PKI):
+
+
+Task 1 - Encrypt file: message.txt using symmetric and asymmetric ciphers:
+
+
+
+Asymmetric cipher: using RSA key 
+
+* Generate public/private RSA key pair using command:
+	> openssl genrsa -aes128 -out server.key 1024
+
+	- the private key will be encrypted using "AES-128" encryption algo
+	- private key will be stored in the file "server.key"
+		- system prompts for password to encrypt private. 
+		- password used:"madman"
+		- server.key is an encoded and encrpyted text file 
+		- therefore cant see the actual content of key, such as the modulus, private exponents.	
+		- to see those, run command:
+		> openssl rsa -in server.key -text
+* Encrypt message.txt using the server’s public key:
+	- using corresponding RSA public key to the private key, 
+	  the public key is stored in a servers_public.key text file 
+	  using command:	
+	> openssl rsa -in server.key -pubout -out server_public.key
+	- message.txt is encypted using this public key, output saved 
+	  to encrypted rsa.txt using command:	
+	> openssl rsautl -encrypt -pubin -inkey server_public.key -in message.txt -out encrypted_rsa.txt
+* Decrypt encrypted rsa.txt using the server’s private key:
+	- save the output in plaintext.txt.
+	> openssl rsautl -decrypt -inkey server.key -in encrypted_rsa.txt 
+	  -out plaintext.txt
+* To verify that the encryption and decryption were successfully done, compare message.txt and plaintext.txt using the diff command:
+	> diff -y message.txt  plaintext.txt
+	- no differnce 
+
+	- Repeating the process of encrypting message.txt to generate encrypted2_RSA.txt
+	- new encrpyted file compared with encrpyted_RSA.txt
+	-  there was difference, diff command output:
+	> Binary files encrypted_rsa.txt and encrypted2_rsa.txt differ
+	- The reason for this : the key used to generate encrpted file is
+	  different everytime we generate a new public private key pair for RSA.
+
+* N: Modulus in HexDecimal: "00a7d441b152a745280521de38fc15fe8ac2eb7a21f7c02f541a97fa39883045055df692bc95168687353ec4b998f4bd412ca0bdb31b123ee0ec1264bd1e02f3a719e4e88bd84585c5276fd14beed8ed6239b92e19382b69e152f10fcbfdae8523242eb2a355cce6a0bafeb5a07f6867af334d77a72c8580004bc3f2d7d1afd625"
+
+N: Modulus in Decimal: "117853621148411938507521113674816617811914713146971814092079663736004924459156457197444643625996835866408689426884574085876969468206838906381364759263085130591513698935901168356316499679862760086003147696831895412596069314826317915424760404324776310236882016925225513414760579631787569159708689352205848794661"
+exponent : 65537  
+
+* password: madman
+* server.key file content:
+
+csc288@csc288-laptop:~/Desktop/lab2$ openssl rsa -in server.key -text
+Enter pass phrase for server.key:
+RSA Private-Key: (1024 bit, 2 primes)
+modulus:
+    00:a7:d4:41:b1:52:a7:45:28:05:21:de:38:fc:15:
+    fe:8a:c2:eb:7a:21:f7:c0:2f:54:1a:97:fa:39:88:
+    30:45:05:5d:f6:92:bc:95:16:86:87:35:3e:c4:b9:
+    98:f4:bd:41:2c:a0:bd:b3:1b:12:3e:e0:ec:12:64:
+    bd:1e:02:f3:a7:19:e4:e8:8b:d8:45:85:c5:27:6f:
+    d1:4b:ee:d8:ed:62:39:b9:2e:19:38:2b:69:e1:52:
+    f1:0f:cb:fd:ae:85:23:24:2e:b2:a3:55:cc:e6:a0:
+    ba:fe:b5:a0:7f:68:67:af:33:4d:77:a7:2c:85:80:
+    00:4b:c3:f2:d7:d1:af:d6:25
+publicExponent: 65537 (0x10001)
+privateExponent:
+    7e:bd:98:6e:a5:10:94:f5:48:0a:ef:9a:f1:24:5a:
+    f9:c7:81:b4:d5:fa:17:34:a6:ba:fe:92:84:e8:08:
+    2b:d7:85:c2:33:c6:1e:80:c8:4f:4b:32:7f:b5:f9:
+    80:b9:7b:82:8c:51:35:f4:f7:ae:6c:85:5a:ce:a0:
+    d3:0d:3f:9a:74:1a:7a:9a:b5:28:b1:71:7d:95:c1:
+    21:88:14:3c:6c:66:73:c2:99:fc:d6:75:c0:08:98:
+    0d:bb:f8:aa:d9:60:95:c5:c2:d1:0b:35:5a:e4:78:
+    50:f8:46:97:46:46:52:27:56:2a:a1:66:aa:fa:d9:
+    8c:8a:7f:f5:13:f3:a9:01
+prime1:
+    00:dc:40:48:77:87:07:cb:a3:93:3d:59:1e:2c:fd:
+    c8:3b:70:51:ec:cd:99:31:b6:31:9f:f6:aa:1a:76:
+    3f:a0:1f:4c:e7:7d:ce:ea:fb:87:dd:4b:73:84:d7:
+    4d:62:8b:5d:55:77:05:d3:90:06:2a:78:f8:0b:79:
+    38:10:e3:ed:11
+prime2:
+    00:c3:11:c5:da:82:97:22:ff:a1:9b:ba:29:dc:79:
+    a6:76:48:ca:ca:4c:04:5a:e9:6d:35:98:50:47:6a:
+    cd:d4:d6:93:3c:91:8c:7c:d3:9d:52:39:14:62:61:
+    f4:1d:01:35:4e:34:5e:36:ea:e9:4d:30:0f:11:fa:
+    76:d4:0e:27:d5
+exponent1:
+    4f:bf:12:bd:fc:6d:2d:25:67:dd:71:94:04:74:4a:
+    f8:82:7d:97:41:05:f3:c2:e5:0a:e7:33:c5:eb:04:
+    b4:84:40:c3:1c:81:3c:01:a0:ba:d6:63:d8:38:60:
+    73:8a:c4:5b:7a:81:e8:8d:20:3e:66:98:61:07:1d:
+    ee:b7:a8:11
+exponent2:
+    00:a3:d9:61:df:50:a1:b2:7c:16:3a:bf:fc:39:7c:
+    d5:1d:b5:b6:e0:85:49:83:33:5e:d0:0d:c8:20:b4:
+    cd:7f:61:5c:fb:1b:26:6e:13:31:a9:c6:d8:20:6b:
+    36:a8:c6:43:08:15:64:ad:ac:53:9a:ca:2b:5e:66:
+    8b:39:43:4a:a1
+coefficient:
+    00:b1:d9:a3:2e:7a:f3:87:f7:13:cc:47:af:33:68:
+    a6:ec:78:e5:08:da:07:88:9e:c7:7f:c3:54:53:91:
+    de:57:e8:bb:9e:d3:9d:a4:f5:e4:d4:8a:fa:90:ab:
+    10:f3:d1:f5:1d:d2:5c:2d:cc:a6:12:f8:22:4f:74:
+    3c:c3:13:8b:fe
+writing RSA key
+-----BEGIN RSA PRIVATE KEY-----
+MIICXQIBAAKBgQCn1EGxUqdFKAUh3jj8Ff6Kwut6IffAL1Qal/o5iDBFBV32kryV
+FoaHNT7EuZj0vUEsoL2zGxI+4OwSZL0eAvOnGeToi9hFhcUnb9FL7tjtYjm5Lhk4
+K2nhUvEPy/2uhSMkLrKjVczmoLr+taB/aGevM013pyyFgABLw/LX0a/WJQIDAQAB
+AoGAfr2YbqUQlPVICu+a8SRa+ceBtNX6FzSmuv6ShOgIK9eFwjPGHoDIT0syf7X5
+gLl7goxRNfT3rmyFWs6g0w0/mnQaepq1KLFxfZXBIYgUPGxmc8KZ/NZ1wAiYDbv4
+qtlglcXC0Qs1WuR4UPhGl0ZGUidWKqFmqvrZjIp/9RPzqQECQQDcQEh3hwfLo5M9
+WR4s/cg7cFHszZkxtjGf9qoadj+gH0znfc7q+4fdS3OE101ii11VdwXTkAYqePgL
+eTgQ4+0RAkEAwxHF2oKXIv+hm7op3HmmdkjKykwEWultNZhQR2rN1NaTPJGMfNOd
+UjkUYmH0HQE1TjReNurpTTAPEfp21A4n1QJAT78SvfxtLSVn3XGUBHRK+IJ9l0EF
+88LlCuczxesEtIRAwxyBPAGgutZj2Dhgc4rEW3qB6I0gPmaYYQcd7reoEQJBAKPZ
+Yd9QobJ8Fjq//Dl81R21tuCFSYMzXtANyCC0zX9hXPsbJm4TManG2CBrNqjGQwgV
+ZK2sU5rKK15mizlDSqECQQCx2aMuevOH9xPMR68zaKbseOUI2geInsd/w1RTkd5X
+6Lue052k9eTUivqQqxDz0fUd0lwtzKYS+CJPdDzDE4v+
+-----END RSA PRIVATE KEY-----
+
+ 
+
+Symmetric cipher : using symetric AES key 
+
+* Generate a random 256-AES key and encrypt file message.txt:
+	> openssl enc -e -a -md sha1 -aes-256-cbc -nosalt -p
+	- password: secret 
+	- key = E5E9FA1BA31ECD1AE84F75CAAA474F3A663F05F412028F81DA65D26EE56424B2
+	- IV = E93DA465B309C53FEC5FF93C9637DA58
+	- using those values, i.e the 256-bit AES key, encrypt the message.txt (+CBC-mode); save the output in encrypted encrypted_aes.txt
+	- For the encryption use the openssl enc command: 
+	> openssl enc -AES-256-CBC -e -in message.txt -out encrypted_aes.txt -K E5E9FA1BA31ECD1AE84F75CAAA474F3A663F05F412028F81DA65D26EE56424B2 -iv E93DA465B309C53FEC5FF93C9637DA58
+
+
+Task 2 - Become a Certificate Authority (CA)
+	- OBJECTIVE: act as a root CA, and issue some certificates for others (e.g. servers)
+	- CA is a trusted entity that issues digital certificates
+	- The digital certificate certifies the ownership of a public key by the named subject of the certificate
+
+* Generate a root-certificate for yourself: 
+	- the root CA’s certificates are self-signed
+	- root CA’s certificates are usually pre-loaded into most operating systems, web browsers, and other software that rely on PKI, and they are unconditionally trusted (Root-of-trust)
+	- 
+
+* The Configuration File openssl.conf:
+	- to create certificates using openSSL, you need a configuartion file, (usually with extension .cnf)
+	- this config file used by three OpenSSL commands: ca, req and x509
+	- configuration file at /usr/lib/ssl/openssl.cnf
+	- as per config file, directories are created 
+	- generate a self-signed certificate for your CA using command:	
+	> openssl req -new -x509 -keyout ca.key -out ca.crt -config openssl.cnf
+	-  passphrase each time you want to use this CA to sign certificates for others. You will also be
+asked to fill in some information, such as the Country Name, Common Name, etc. You can use any name
+you want for your CA. The execution of the command above results in two files: ca.key and ca.crt.
+The file ca.key contains the CA’s private key, while ca.crt contains the public-key certificate.
+
+Task 3: Create a Certificate for PKILabServer.com
+
+* act as a root CA and generate the digital certificate for this website (PKILabServer.com) using
+your CA’s private key from the previous public key 
+
+* Generate a Certificate Signing Request (CSR)
+	- company has the server.key file, it should generate a Certificate Signing Request (CSR)
+	- CSR will be sent to the CA - you
+	- generate a certificate for the key (usually after ensuring that identity information in the CSR matches with the server’s true identity
+* Generate a Certificate
+	> openssl ca -in server.csr -out server.crt -cert ca.crt -keyfile ca.key \
+-config openssl.cnf
+
+Task 4: Task 4: Deploying Certificate in an HTTPs Website
+
+	- PKILabServer.com as the domain name
+	- Add the domain name to the /etc/hosts file.
+	
+	- Launch the web-server. You should launch a simple web server that will be using the certificate
+generated in the previous task. To do so, follow the instructions described below:
+# Combine the secret key and certificate into one file
+$ cp server.key server.pem
+$ cat server.crt >> server.pem
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
